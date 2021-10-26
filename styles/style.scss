@@ -1,0 +1,18 @@
+@import url(../vendor/normalize.css);
+@import './modules/fonts.scss';
+
+@import './modules/variables.scss';
+@import './modules/mixins.scss';
+
+@import './modules/blocks/page/page.scss';
+@import './modules/blocks/page/__section/page__section.scss';
+
+@import './modules/blocks/header/header.scss';
+@import './modules/blocks/header/__navigation/header__navigation.scss';
+@import './modules/blocks/header/__list/header__list.scss';
+@import './modules/blocks/header/__list/_opened/header__list_opened.scss';
+@import './modules/blocks/header/__list-element/header__list-element.scss';
+@import './modules/blocks/header/__link/header__link.scss';
+@import './modules/blocks/header/__burger-container/header__burger-container.scss';
+@import './modules/blocks/header/__burger/header__burger.scss';
+@import './modules/blocks/header/__burger/_opened/header__burger_opened.scss';

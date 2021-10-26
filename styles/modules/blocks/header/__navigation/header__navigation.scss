@@ -1,0 +1,9 @@
+.header__navigation {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin-bottom: 20px;
+
+  @include mobile {
+    min-height: 74px;
+  }
+}

@@ -1,0 +1,16 @@
+.header__burger_opened {
+  transition: transform 0.4s ease-in-out 0.5s;
+  transform: rotate(45deg);
+
+  &::before {
+    transition: top 0.4s ease-in-out;
+    top: 0;
+  }
+
+  &::after {
+    transition: bottom 0.4s ease-in-out, transform 0.4s ease-in-out 0.5s;
+    bottom: 0;
+    transform: rotate(-90deg);
+  }
+}
+

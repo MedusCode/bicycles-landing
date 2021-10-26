@@ -1,0 +1,12 @@
+.page__section {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto 120px auto;
+  padding: 0 50px;
+
+  @include tablet {
+    padding: 0 18px;
+  }
+}
+

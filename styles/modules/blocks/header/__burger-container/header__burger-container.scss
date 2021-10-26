@@ -1,0 +1,15 @@
+.header__burger-container {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 28px;
+  right: 18px;
+  width: 22px;
+  height: 19px;
+  cursor: pointer;
+
+  @include mobile {
+    visibility: visible;
+  }
+}

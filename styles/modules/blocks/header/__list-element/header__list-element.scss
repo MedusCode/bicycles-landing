@@ -1,0 +1,15 @@
+.header__list-element {
+  margin: 0 34px 0 0;
+
+  &:last-child {
+    margin: 0;
+  }
+
+  @include mobile {
+    margin: 0 0 32px 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

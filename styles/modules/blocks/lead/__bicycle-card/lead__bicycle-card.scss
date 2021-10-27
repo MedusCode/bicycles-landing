@@ -9,7 +9,7 @@
   border-radius: 20px;
   filter: drop-shadow(-20px 60px 220px rgba(0, 0, 0, 0.2));
 
-  @include laptop {
+  @include after-laptop {
     width: 293.33px;
     height: 200px;
     top: 55%;

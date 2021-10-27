@@ -3,7 +3,7 @@
   color: $secondary-color;
   opacity: 0.7;
 
-  @include laptop {
+  @include after-laptop {
     font-size: 16px;
     line-height: 26px;
   }

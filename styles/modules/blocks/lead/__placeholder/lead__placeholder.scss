@@ -7,7 +7,7 @@
   background-size: cover;
   background-position: center;
 
-  @include laptop {
+  @include after-laptop {
     height: 700px;
   }
 

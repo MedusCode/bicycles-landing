@@ -8,5 +8,21 @@
   @include tablet {
     padding: 0 18px;
   }
+
+  @include after-tablet {
+    position: relative;
+    margin-bottom: 80px;
+    padding-top: 41px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 18px;
+      width: calc(100% - 36px);
+      height: 1px;
+      background-color: #E3E3E3;
+    }
+  }
 }
 

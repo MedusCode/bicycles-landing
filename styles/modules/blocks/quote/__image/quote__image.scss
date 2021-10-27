@@ -1,0 +1,15 @@
+.quote__image {
+  width: 650px;
+
+  @include after-desktop {
+    width: 540px;
+  }
+
+  @include after-laptop {
+    width: 400px;
+  }
+
+  @include after-tablet {
+    width: 100%;
+  }
+}

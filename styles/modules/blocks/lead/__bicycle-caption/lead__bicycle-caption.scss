@@ -2,7 +2,7 @@
   display: flex;
   margin: 117px 0 auto;
 
-  @include laptop {
+  @include after-laptop {
     margin: 60px 0 auto;
   }
 

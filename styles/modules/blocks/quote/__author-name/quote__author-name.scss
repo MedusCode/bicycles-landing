@@ -1,0 +1,18 @@
+.quote__author-name {
+  color: $primary-color;
+  margin: 0 0 6px 0;
+  @include font($font-family, 500, 20px, 32px);
+
+  @include after-laptop {
+    font-size: 18px;
+  }
+
+  @include after-tablet {
+    margin: 0 0 4px 0;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

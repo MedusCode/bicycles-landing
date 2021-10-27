@@ -5,7 +5,13 @@
   line-height: $line-hieght;
 }
 
-@mixin laptop {
+@mixin after-desktop {
+  @media (max-width: 1439px){
+      @content;
+  }
+}
+
+@mixin after-laptop {
   @media (max-width: 1000px){
       @content;
   }

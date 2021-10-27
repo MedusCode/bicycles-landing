@@ -342,10 +342,16 @@
   }
 }
 
-.lead__bicycle-card {
+.lead__bicycle-card-movement-area {
   position: absolute;
   top: 39%;
   left: 0;
+  height: 51.5%;
+}
+
+.lead__bicycle-card {
+  position: -webkit-sticky;
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;

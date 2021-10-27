@@ -6,6 +6,8 @@
 
 @import './modules/blocks/page/page.scss';
 @import './modules/blocks/page/__section/page__section.scss';
+@import './modules/blocks/page/__title/page__title.scss';
+@import './modules/blocks/page/__paragraph/page__paragraph.scss';
 
 @import './modules/blocks/header/header.scss';
 @import './modules/blocks/header/__navigation/header__navigation.scss';
@@ -16,3 +18,18 @@
 @import './modules/blocks/header/__burger-container/header__burger-container.scss';
 @import './modules/blocks/header/__burger/header__burger.scss';
 @import './modules/blocks/header/__burger/_opened/header__burger_opened.scss';
+
+@import './modules/blocks/main/main.scss';
+
+@import './modules/blocks/lead/lead.scss';
+@import './modules/blocks/lead/__container/lead__container.scss';
+@import './modules/blocks/lead/__title/lead__title.scss';
+@import './modules/blocks/lead/__images-container/lead__images-container.scss';
+@import './modules/blocks/lead/__placeholder/lead__placeholder.scss';
+@import './modules/blocks/lead/__bicycle-card/lead__bicycle-card.scss';
+@import './modules/blocks/lead/__bicycle-image/lead__bicycle-image.scss';
+@import './modules/blocks/lead/__paragraph/lead__paragraph.scss';
+@import './modules/blocks/lead/__button/lead__button.scss';
+@import './modules/blocks/lead/__bicycle-caption/lead__bicycle-caption.scss';
+@import './modules/blocks/lead/__bicycle-name/lead__bicycle-name.scss';
+@import './modules/blocks/lead/__line/lead__line.scss';

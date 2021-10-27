@@ -1,0 +1,32 @@
+.lead__container {
+  box-sizing: border-box;
+  max-width: 1370px;
+  margin: 0 0 0 auto;
+  padding: 0 0 0 50px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 460px auto;
+  grid-template-rows: repeat(3, min-content) 1fr;
+
+  @media (max-width: 1024px) {
+    column-gap: 20px;
+  }
+
+  @include laptop {
+    grid-template-columns: 350px auto;
+  }
+
+  @include tablet {
+    padding: 0 0 0 18px;
+  }
+
+  @include after-tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+    padding-right: 18px;
+  }
+
+  @include mobile {
+    gap: 40px;
+  }
+}

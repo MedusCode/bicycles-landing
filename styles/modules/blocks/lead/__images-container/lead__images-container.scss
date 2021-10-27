@@ -1,0 +1,16 @@
+.lead__images-container {
+  position: relative;
+  grid-row: 1 / -1;
+  grid-column-start: 2;
+  padding: 0 0 0 30px;
+
+  @include after-tablet {
+    padding: 0 0 0 100px;
+    grid-row: 2 / 3;
+    grid-column-start: 1;
+  }
+
+  @include mobile {
+    padding: 0 0 0 30px;
+  }
+}

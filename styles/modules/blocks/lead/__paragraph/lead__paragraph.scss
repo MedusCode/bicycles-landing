@@ -1,0 +1,7 @@
+.lead__paragraph {
+  margin: 0;
+
+  @include after-tablet {
+    max-width: 480px;
+  }
+}

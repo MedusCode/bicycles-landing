@@ -1,0 +1,14 @@
+.page__title {
+  @include font($font-family, 700, 55px, 60px);
+  color: $primary-color;
+  letter-spacing: -0.5px;
+
+  @include laptop {
+    font-size: 50px;
+  }
+
+  @include mobile {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

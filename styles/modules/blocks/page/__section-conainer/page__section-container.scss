@@ -1,0 +1,14 @@
+.page__section-container {
+  box-sizing: border-box;
+  max-width: 1370px;
+  margin: 0 0 0 auto;
+  padding: 0 0 0 50px;
+
+  @include tablet {
+    padding-left: 18px;
+  }
+
+  @include after-tablet {
+    padding-right: 18px;
+  }
+}

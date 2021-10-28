@@ -6,6 +6,8 @@
 
 @import './modules/blocks/page/page.scss';
 @import './modules/blocks/page/__section/page__section.scss';
+@import './modules/blocks/page/__section/_out-of-content/page__section_out-of-content.scss';
+@import './modules/blocks/page/__section-conainer/page__section-container.scss';
 @import './modules/blocks/page/__title/page__title.scss';
 @import './modules/blocks/page/__paragraph/page__paragraph.scss';
 
@@ -41,3 +43,20 @@
 @import './modules/blocks/quote/__text/quote__text.scss';
 @import './modules/blocks/quote/__author-name/quote__author-name.scss';
 @import './modules/blocks/quote/__author-profession/quote__author-profession.scss';
+
+@import './modules/blocks/styles/styles.scss';
+@import './modules/blocks/styles/__element-animating/styles__element-animating.scss';
+@import './modules/blocks/styles/__container/styles__container.scss';
+@import './modules/blocks/styles/__title/styles__title.scss';
+@import './modules/blocks/styles/__paragraph/styles__paragraph.scss';
+@import './modules/blocks/styles/__slider-container/styles__slider-container.scss';
+@import './modules/blocks/styles/__slider/styles__slider.scss';
+@import './modules/blocks/styles/__slider-element/styles__slider-element.scss';
+@import './modules/blocks/styles/__image/styles__image.scss';
+@import './modules/blocks/styles/__icon/styles__icon.scss';
+@import './modules/blocks/styles/__icon/_active/styles__icon_active.scss';
+@import './modules/blocks/styles/__icon-svg/styles__icon-svg.scss';
+@import './modules/blocks/styles/__buttons/styles__buttons.scss';
+@import './modules/blocks/styles/__button/styles__button.scss';
+
+

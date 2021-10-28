@@ -1,14 +1,14 @@
 .lead {
-  width: 100%;
-  max-width: 1440px;
-  margin: 94px auto 120px;
+  margin-top: 94px;
 
   @include after-tablet {
-    margin-bottom: 80px;
+    &::after {
+      content: none;
+    }
   }
 
   @include mobile {
-    margin-top: 111px;
+    margin-top: 74px;
   }
 }
 

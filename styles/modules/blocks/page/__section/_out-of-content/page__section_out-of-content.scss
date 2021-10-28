@@ -1,0 +1,13 @@
+.page__section_out-of-content {
+  max-width: 1440px;
+  padding: 0;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  @include after-tablet {
+    margin-bottom: 80px;
+    padding-top: 41px;
+  }
+}

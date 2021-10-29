@@ -4,7 +4,7 @@
   grid-template-columns: 460px auto;
   grid-template-rows: repeat(3, min-content) 1fr;
 
-  @media (max-width: 1024px) {
+  @include laptop {
     column-gap: 20px;
   }
 

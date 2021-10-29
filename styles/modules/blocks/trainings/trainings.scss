@@ -1,0 +1,17 @@
+.trainings {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: min-content min-content 1fr;
+  row-gap: 50px;
+  column-gap: 60px;
+
+  @include after-laptop {
+    column-gap: 35px;
+  }
+
+  @include after-tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, min-content);
+    gap: 40px;
+  }
+}

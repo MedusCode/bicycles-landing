@@ -1,0 +1,16 @@
+.trainings__service-link {
+  color: $primary-color;
+  transition: $links-transiton;
+  text-decoration: none;
+
+  @include font($font-family, 600, 18px, 28px);
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

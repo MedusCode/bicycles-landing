@@ -1,0 +1,25 @@
+.trainings__image {
+  width: 580px;
+  justify-self: end;
+  align-self: center;
+  grid-row: 1 / -1;
+  grid-column-start: 2;
+
+  @media (max-width: 1160px) {
+    width: 500px;
+  }
+
+  @include after-laptop {
+    width: 390px;
+  }
+
+  @media (max-width: 879px) {
+    width: 330px;
+  }
+
+  @include after-tablet {
+    width: 100%;
+    grid-row: auto;
+    grid-column-start: auto;
+  }
+}

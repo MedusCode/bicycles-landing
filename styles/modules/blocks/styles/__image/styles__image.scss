@@ -1,3 +1,7 @@
 .styles__image {
   height: 100%;
+
+  @include after-tablet {
+    width: calc(100vw - 36px);
+  }
 }

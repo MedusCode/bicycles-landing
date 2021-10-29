@@ -1,4 +1,18 @@
 .styles__paragraph {
   max-width: 460px;
   margin: 0;
+  transition: opacity 0.2s ease-in-out;
+
+  @include after-laptop {
+    max-width: 400px;
+  }
+
+  @include after-tablet {
+    grid-column: 1 / -1;
+    grid-row-start: 3;
+  }
+
+  @include mobile {
+    max-width: none;
+  }
 }

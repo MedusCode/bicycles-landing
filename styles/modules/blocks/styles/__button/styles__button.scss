@@ -27,4 +27,12 @@
     transform: rotate(180deg);
     margin: 0;
   }
+
+  @include mobile {
+    width: 24px;
+    height: 24px;
+    background-size: 6px 11px;
+    background-position: 8px 6.5px;
+    margin: 0 10px 0 0;
+  }
 }

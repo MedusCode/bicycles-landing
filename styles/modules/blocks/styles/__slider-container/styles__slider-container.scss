@@ -3,4 +3,19 @@
   width: 100%;
   margin-top: 30px;
   overflow: hidden;
+
+  @include laptop {
+    height: 360px;
+  }
+
+  @include after-laptop {
+    height: 330px;
+  }
+
+  @include after-tablet {
+    height: min-content;
+    grid-column: 1 / -1;
+    grid-row-start: 2;
+    margin: 0;
+  }
 }

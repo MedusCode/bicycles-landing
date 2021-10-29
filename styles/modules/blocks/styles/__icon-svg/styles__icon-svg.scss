@@ -3,4 +3,10 @@
   width: 50px;
   bottom: 13px;
   left: 16px;
+
+  @include mobile {
+    width: 36px;
+    bottom: 7px;
+    left: 10px;
+  }
 }

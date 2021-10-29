@@ -1,4 +1,16 @@
 .styles__container {
   display: grid;
   gap: 50px;
+
+  @include after-laptop {
+    gap: 30px;
+  }
+
+  @include after-tablet {
+    grid-template-columns: 1fr min-content;
+  }
+
+  @include after-tablet {
+    gap: 40px;
+  }
 }

@@ -1,0 +1,23 @@
+.lead__container {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 460px auto;
+  grid-template-rows: repeat(3, min-content) 1fr;
+
+  @include laptop {
+    column-gap: 20px;
+  }
+
+  @include after-laptop {
+    grid-template-columns: 350px auto;
+  }
+
+  @include after-tablet {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+  }
+
+  @include mobile {
+    gap: 40px;
+  }
+}

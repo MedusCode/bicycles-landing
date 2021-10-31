@@ -1,0 +1,21 @@
+.lead__placeholder {
+  width: 100%;
+  max-width: 610px;
+  height: 836px;
+  margin: 0 0 0 auto;
+  background-image: url(../images/lead/placeholder.png);
+  background-size: cover;
+  background-position: center;
+
+  @include after-laptop {
+    height: 700px;
+  }
+
+  @include after-tablet {
+    height: 500px;
+  }
+
+  @include mobile {
+    height: 348px;
+  }
+}

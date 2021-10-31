@@ -1,0 +1,12 @@
+.lead__bicycle-caption {
+  display: flex;
+  margin: 117px 0 auto;
+
+  @include after-laptop {
+    margin: 60px 0 auto;
+  }
+
+  @include after-tablet {
+    display: none;
+  };
+}

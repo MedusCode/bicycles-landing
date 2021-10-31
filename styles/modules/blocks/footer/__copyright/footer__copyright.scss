@@ -1,0 +1,11 @@
+.footer__copyright {
+  color: #cfcfcf;
+  margin-top: 50px;
+  grid-column-start: 1;
+  @include font($font-family, 600, 14px, 20px);
+
+  @include after-tablet {
+    margin-top: 59px;
+    font-weight: 500;
+  }
+}

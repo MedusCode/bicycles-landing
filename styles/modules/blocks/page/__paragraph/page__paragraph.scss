@@ -1,0 +1,15 @@
+.page__paragraph {
+  @include font($font-family, 400, 18px, 28px);
+  color: $secondary-color;
+  opacity: 0.7;
+
+  @include after-laptop {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  @include mobile {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

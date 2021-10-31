@@ -4,7 +4,7 @@
   color: $primary-color;
   font-weight: 500;
   text-decoration: none;
-  transition: opacity 0.2s ease-in-out;
+  transition: $links-transiton;
 
   &:hover {
     opacity: 0.75;

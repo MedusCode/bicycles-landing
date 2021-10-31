@@ -1,0 +1,14 @@
+.lead {
+  margin-top: 94px;
+
+  @include after-tablet {
+    &::after {
+      content: none;
+    }
+  }
+
+  @include mobile {
+    margin-top: 74px;
+  }
+}
+

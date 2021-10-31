@@ -1,0 +1,19 @@
+.quote {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 80px;
+
+  @include after-desktop {
+    gap: 40px;
+  }
+
+  @include after-laptop {
+    gap: 30px;
+  }
+
+  @include after-tablet {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 20px;
+  }
+}

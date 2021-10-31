@@ -1,5 +1,36 @@
+@mixin font ($font-family, $font-wieght, $font-size, $line-hieght) {
+  font-family: $font-family;
+  font-weight: $font-wieght;
+  font-size: $font-size;
+  line-height: $line-hieght;
+}
+
+@mixin after-desktop {
+  @media (max-width: 1439px){
+      @content;
+  }
+}
+
+@mixin laptop {
+  @media (max-width: 1024px){
+      @content;
+  }
+}
+
+@mixin after-laptop {
+  @media (max-width: 1000px){
+      @content;
+  }
+}
+
 @mixin tablet {
   @media (max-width: 768px){
+      @content;
+  }
+}
+
+@mixin after-tablet {
+  @media (max-width: 767px){
       @content;
   }
 }
@@ -9,3 +40,4 @@
       @content;
   }
 }
+

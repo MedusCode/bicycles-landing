@@ -1,0 +1,22 @@
+.footer__container {
+  box-sizing: border-box;
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: 0 auto;
+
+  display: grid;
+  grid: repeat(3, max-content) / auto 1fr;
+  gap: 50px;
+
+  @include tablet {
+    padding: 0 18px;
+  }
+
+  @include after-tablet {
+    gap: 40px;
+  }
+
+  @include mobile {
+    grid: repeat(3, max-content) / 1fr;
+  }
+}

@@ -1,0 +1,9 @@
+.styles__buttons {
+  display: flex;
+  align-self: center;
+
+  @include after-tablet {
+    grid-row-start: 1;
+    grid-column: 2;
+  }
+}

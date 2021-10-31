@@ -1,0 +1,9 @@
+.lead__bicycle-name {
+  margin: 0;
+  @include font($font-family, 400, 18px, 18px);
+  color: $primary-color;
+
+  @include after-laptop {
+    font-size: 16px;
+  }
+}

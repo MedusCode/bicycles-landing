@@ -1,0 +1,6 @@
+.footer__email-label {
+  color: $primary-color;
+  max-width: 230px;
+
+  @include font($font-family, 600, 24px, 32px);
+}

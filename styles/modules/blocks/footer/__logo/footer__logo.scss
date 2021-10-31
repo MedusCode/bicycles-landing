@@ -1,0 +1,16 @@
+.footer__logo {
+  display: none;
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  background-image: url(../images/footer/logo.svg);
+  background-size: 30px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include mobile {
+    display: block;
+  }
+}

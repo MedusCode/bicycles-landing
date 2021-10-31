@@ -1,0 +1,20 @@
+.quote__text {
+  color: $primary-color;
+  letter-spacing: -0.5px;
+  @include font($font-family, 600, 34px, 44px);
+
+  @include after-laptop {
+    font-size: 30px;
+    line-height: 35px;
+  }
+
+  @include after-tablet {
+    margin: 0 0 40px 0;
+    max-width: 450px;
+  }
+
+  @include mobile {
+    font-size: 23px;
+    line-height: 29px;
+  }
+}

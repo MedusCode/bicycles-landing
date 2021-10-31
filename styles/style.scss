@@ -6,13 +6,81 @@
 
 @import './modules/blocks/page/page.scss';
 @import './modules/blocks/page/__section/page__section.scss';
+@import './modules/blocks/page/__section/_out-of-content/page__section_out-of-content.scss';
+@import './modules/blocks/page/__section-conainer/page__section-container.scss';
+@import './modules/blocks/page/__title/page__title.scss';
+@import './modules/blocks/page/__paragraph/page__paragraph.scss';
+
+@import './modules/blocks/theme-switcher/theme-switcher.scss';
+@import './modules/blocks/theme-switcher/__switcher/theme-switcher__switcher.scss';
+@import './modules/blocks/theme-switcher/__switcher/_theme-dark/theme-switcher__switcher_theme-dark.scss';
+@import './modules/blocks/theme-switcher/__light-theme-icon/theme-switcher__light-theme-icon.scss';
+@import './modules/blocks/theme-switcher/__dark-theme-icon/theme-switcher__dark-theme-icon.scss';
 
 @import './modules/blocks/header/header.scss';
 @import './modules/blocks/header/__navigation/header__navigation.scss';
 @import './modules/blocks/header/__list/header__list.scss';
-@import './modules/blocks/header/__list/_opened/header__list_opened.scss';
 @import './modules/blocks/header/__list-element/header__list-element.scss';
 @import './modules/blocks/header/__link/header__link.scss';
 @import './modules/blocks/header/__burger-container/header__burger-container.scss';
 @import './modules/blocks/header/__burger/header__burger.scss';
 @import './modules/blocks/header/__burger/_opened/header__burger_opened.scss';
+@import './modules/blocks/header/__theme-switcher/header__theme-switcher.scss';
+
+@import './modules/blocks/main/main.scss';
+
+@import './modules/blocks/lead/lead.scss';
+@import './modules/blocks/lead/__container/lead__container.scss';
+@import './modules/blocks/lead/__title/lead__title.scss';
+@import './modules/blocks/lead/__images-container/lead__images-container.scss';
+@import './modules/blocks/lead/__placeholder/lead__placeholder.scss';
+@import './modules/blocks/lead/__bicycle-card-movement-area/lead__bicycle-card-movement-area.scss';
+@import './modules/blocks/lead/__bicycle-card/lead__bicycle-card.scss';
+@import './modules/blocks/lead/__bicycle-image/lead__bicycle-image.scss';
+@import './modules/blocks/lead/__paragraph/lead__paragraph.scss';
+@import './modules/blocks/lead/__button/lead__button.scss';
+@import './modules/blocks/lead/__bicycle-caption/lead__bicycle-caption.scss';
+@import './modules/blocks/lead/__bicycle-name/lead__bicycle-name.scss';
+@import './modules/blocks/lead/__line/lead__line.scss';
+
+@import './modules/blocks/quote/quote.scss';
+@import './modules/blocks/quote/__image/quote__image.scss';
+@import './modules/blocks/quote/__container/quote__container.scss';
+@import './modules/blocks/quote/__text/quote__text.scss';
+@import './modules/blocks/quote/__author-name/quote__author-name.scss';
+@import './modules/blocks/quote/__author-profession/quote__author-profession.scss';
+
+@import './modules/blocks/styles/styles.scss';
+@import './modules/blocks/styles/__element-animating/styles__element-animating.scss';
+@import './modules/blocks/styles/__container/styles__container.scss';
+@import './modules/blocks/styles/__title/styles__title.scss';
+@import './modules/blocks/styles/__paragraph/styles__paragraph.scss';
+@import './modules/blocks/styles/__slider-container/styles__slider-container.scss';
+@import './modules/blocks/styles/__slider/styles__slider.scss';
+@import './modules/blocks/styles/__slider-element/styles__slider-element.scss';
+@import './modules/blocks/styles/__image/styles__image.scss';
+@import './modules/blocks/styles/__icon/styles__icon.scss';
+@import './modules/blocks/styles/__icon/_active/styles__icon_active.scss';
+@import './modules/blocks/styles/__icon-svg/styles__icon-svg.scss';
+@import './modules/blocks/styles/__buttons/styles__buttons.scss';
+@import './modules/blocks/styles/__button/styles__button.scss';
+
+@import './modules/blocks/trainings/trainings.scss';
+@import './modules/blocks/trainings/__title/trainings__title.scss';
+@import './modules/blocks/trainings/__image/trainings__image.scss';
+@import './modules/blocks/trainings/__paragraph/trainings__paragraph.scss';
+@import './modules/blocks/trainings/__services-list/trainings__services-list.scss';
+@import './modules/blocks/trainings/__list-element/trainings__list-element.scss';
+@import './modules/blocks/trainings/__service-link/trainings__service-link.scss';
+
+@import './modules/blocks/footer/footer.scss';
+@import './modules/blocks/footer/__container/footer__container.scss';
+@import './modules/blocks/footer/__email-label/footer__email-label.scss';
+@import './modules/blocks/footer/__email-fieldset/footer__email-fieldset.scss';
+@import './modules/blocks/footer/__email-input/footer__email-input.scss';
+@import './modules/blocks/footer/__submit-button/footer__submit-button.scss';
+@import './modules/blocks/footer/__copyright/footer__copyright.scss';
+@import './modules/blocks/footer/__theme-switcher/footer__theme-switcher.scss';
+@import './modules/blocks/footer/__logo/footer__logo.scss';
+
+@import './modules/blocks/scrollbar/scrollbar.scss';

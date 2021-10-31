@@ -1,0 +1,12 @@
+.footer__submit-button {
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  transform: translate(0, -50%);
+  border: none;
+  padding: 0 2px;
+  color: $primary-color;
+  cursor: pointer;
+
+  @include font(inherit, inherit, inherit, inherit);
+}

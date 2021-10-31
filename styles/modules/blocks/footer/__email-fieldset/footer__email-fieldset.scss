@@ -1,0 +1,16 @@
+.footer__email-fieldset {
+  position: relative;
+  border: none;
+  width: 360px;
+  height: 50px;
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 0;
+
+
+  @include font($font-family, 500, 13px, 28px);
+
+  @include mobile {
+    width: 100%;
+  }
+}

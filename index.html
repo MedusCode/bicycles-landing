@@ -11,24 +11,29 @@
   <!-- <link rel="shortcut icon" href="#" type="image/svg"> -->
 </head>
 <body>
-  <div class="page">
+  <div class="page scrollto" id="page">
 
     <!-- header -->
     <header class="header">
       <nav class="header__navigation page__section">
         <ul class="header__list">
           <li class="header__list-element">
-            <a href="#" class="header__link">Покрытия и градиенты</a>
+            <a href="#styles" class="header__link">Покрытия и градиенты</a>
           </li>
           <li class="header__list-element">
             <a href="#" class="header__link">Велосипеды</a>
           </li>
           <li class="header__list-element">
-            <a href="#" class="header__link">Тренировки</a>
+            <a href="#trainigs" class="header__link">Тренировки</a>
           </li>
         </ul>
         <div class="header__burger-container">
           <div class="header__burger"></div>
+          <div class="theme-switcher header__theme-switcher">
+            <div class="theme-switcher__light-theme-icon"></div>
+            <button class="theme-switcher__switcher"></button>
+            <div class="theme-switcher__dark-theme-icon"></div>
+          </div>
         </div>
       </nav>
     </header>
@@ -70,32 +75,32 @@
       </section>
 
       <!-- styles -->
-      <section class="styles page__section page__section_out-of-content">
+      <section class="styles page__section page__section_out-of-content scrollto" id="styles">
         <div class="styles__container page__section-container">
           <h2 class="styles__title page__title">Шоссе</h2>
           <p class="styles__paragraph page__paragraph">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
           <div class="styles__slider-container">
             <div class="styles__slider">
               <div class="tt styles__slider-element">
-                <img class="styles__image" src="./images/styles/tt.png" alt="Фото">
+                <img class="styles__image" src="./images/styles/tt.png" alt="Фото тт трассы">
                 <div class="styles__icon">
                   <svg class="styles__icon-svg" width="50" height="2" viewBox="0 0 50 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1H12H22.3577H33H50" stroke="white" stroke-width="2"/></svg>
                 </div>
               </div>
               <div class="road styles__slider-element">
-                <img class="styles__image" src="./images/styles/road.png" alt="Фото">
+                <img class="styles__image" src="./images/styles/road.png" alt="Фото шоссейной трассы">
                 <div class="styles__icon styles__icon_active">
                   <svg class="styles__icon-svg" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 15L9.38934 3.61363C11.0392 1.3744 14.4142 1.46086 15.9472 3.78163L22.1718 13.2047C22.9123 14.3256 24.1659 15 25.5094 15H34H51" stroke="white" stroke-width="2"/></svg>
                 </div>
               </div>
               <div class="gravel styles__slider-element">
-                <img class="styles__image" src="./images/styles/gravel.png" alt="Фото">
+                <img class="styles__image" src="./images/styles/gravel.png" alt="Фото грэвел трассы">
                 <div class="styles__icon">
                   <svg class="styles__icon-svg" width="52" height="7" viewBox="0 0 52 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6L12.443 2.03898C13.4403 1.69373 14.5337 1.75667 15.4849 2.21408L22.1707 5.42916C22.9417 5.79993 23.8112 5.91373 24.6517 5.75385L35.7876 3.63553C36.2587 3.54591 36.7421 3.54174 37.2147 3.62322L51 6" stroke="white" stroke-width="2"/></svg>
                 </div>
               </div>
               <div class="tt styles__slider-element">
-                <img class="styles__image" src="./images/styles/tt.png" alt="Фото">
+                <img class="styles__image" src="./images/styles/tt.png" alt="Фото тт трассы">
                 <div class="styles__icon">
                   <svg class="styles__icon-svg" width="50" height="2" viewBox="0 0 50 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1H12H22.3577H33H50" stroke="white" stroke-width="2"/></svg>
                 </div>
@@ -110,7 +115,7 @@
       </section>
 
       <!-- trainings -->
-      <section class="trainings page__section">
+      <section class="trainings page__section scrollto" id="trainings">
         <h2 class="trainings__title page__title">Тренировки</h2>
         <img src="./images/trainings/trainings__image.png" alt="Дорога в лесу" class="trainings__image">
         <p class="trainings__paragraph page__paragraph">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
@@ -122,8 +127,21 @@
     </main>
 
     <!-- footer -->
-    <footer>
-
+    <footer class="footer">
+      <div class="footer__container">
+        <label class="footer__email-label" for="email-input">Подпишитесь на рассылку —</label>
+        <fieldset class="footer__email-fieldset">
+          <input class="footer__email-input" type="email" name="email-input" id="email" placeholder="Ваш e-mail" required>
+          <button class="footer__submit-button" type="submit">ok</button>
+        </fieldset>
+        <small class="footer__copyright">&copy; Road Club 2021</small>
+        <div class="theme-switcher footer__theme-switcher">
+          <div class="theme-switcher__light-theme-icon"></div>
+          <button class="theme-switcher__switcher"></button>
+          <div class="theme-switcher__dark-theme-icon"></div>
+        </div>
+        <a class="footer__logo" href="#page"></a>
+      </div>
     </footer>
   </div>
 
@@ -131,6 +149,7 @@
   <script src="./scripts/bicycle-card.js"></script>
   <script src="./scripts/styles-slider-texts.js"></script>
   <script src="./scripts/styles-slider.js"></script>
+  <script src="./scripts/smooth-scroll.js"></script>
 
 </body>
 </html>

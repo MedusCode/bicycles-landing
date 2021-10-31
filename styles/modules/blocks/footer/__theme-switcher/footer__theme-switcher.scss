@@ -1,0 +1,11 @@
+.footer__theme-switcher {
+  grid-column: 2 / -1;
+  grid-row: 3 / -1;
+  justify-self: end;
+  align-self: end;
+  margin-bottom: 6px;
+
+  @include mobile {
+    display: none;
+  }
+}

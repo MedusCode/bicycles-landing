@@ -1,6 +1,15 @@
 .styles__slider-element {
-  position: relative;
+  display: grid;
+  gap: 50px;
   height: 100%;
   margin: 0 40px 0 0;
   overflow: hidden;
+
+  @include after-laptop {
+    gap: 30px;
+  }
+
+  @include after-tablet {
+    gap: 40px;
+  }
 }

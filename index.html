@@ -11,7 +11,7 @@
   <!-- <link rel="shortcut icon" href="#" type="image/svg"> -->
 </head>
 <body>
-  <div class="page scrollto" id="page">
+  <div class="page" id="page">
 
     <!-- header -->
     <header class="header">
@@ -24,16 +24,16 @@
             <a href="#" class="header__link">Велосипеды</a>
           </li>
           <li class="header__list-element">
-            <a href="#trainigs" class="header__link">Тренировки</a>
+            <a href="#trainings" class="header__link">Тренировки</a>
           </li>
         </ul>
-        <div class="header__burger-container">
+        <button class="header__burger-container">
           <div class="header__burger"></div>
-          <div class="theme-switcher header__theme-switcher">
-            <div class="theme-switcher__light-theme-icon"></div>
-            <button class="theme-switcher__switcher"></button>
-            <div class="theme-switcher__dark-theme-icon"></div>
-          </div>
+        </button>
+        <div class="theme-switcher header__theme-switcher">
+          <div class="theme-switcher__light-theme-icon"></div>
+          <button class="theme-switcher__switcher"></button>
+          <div class="theme-switcher__dark-theme-icon"></div>
         </div>
       </nav>
     </header>
@@ -44,19 +44,19 @@
       <!-- lead -->
       <section class="lead page__section page__section_out-of-content">
         <div class="lead__container page__section-container">
-          <h1 class="lead__title page__title">Шоссе, ТТ<br> и Грэвел</h1>
+          <h1 class="lead__title page__title">Шоссе, ТТ и&nbsp;Грэвел</h1>
           <div class="lead__images-container">
             <div class="lead__placeholder"></div>
             <div class="lead__bicycle-card-movement-area">
               <div class="lead__bicycle-card">
-                <img class="lead__bicycle-image" src="./images/lead/bicycle.png" alt="Велосипед Cannondale Systemsix" class="lead__bicycle-image">
+                <img class="lead__bicycle-image" src="./images/bicycles/road/cannodale.jpg" alt="Велосипед Cannondale Systemsix">
               </div>
             </div>
           </div>
           <p class="lead__paragraph page__paragraph">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
-          <a href="#" class="lead__button">Подробнее</a>
+          <a href="#styles" class="lead__button">Подробнее</a>
           <div class="lead__bicycle-caption">
-            <p class="lead__bicycle-name">Cannondale Systemsix</з>
+            <p class="lead__bicycle-name">Cannondale Systemsix</p>
             <hr class="lead__line">
           </div>
         </div>
@@ -64,7 +64,7 @@
 
       <!-- quote -->
       <section class="quote page__section">
-        <img class="quote__image" src="./images/quote/quote__image.png" alt="Вид на горы с велосипедистом">
+        <img class="quote__image" src="./images/quote/quote__image.jpg" alt="Вид на горы с велосипедистом">
         <figure class="quote__container">
           <q class="quote__text">Катайся много или мало, долго или коротко, как хочешь - но катайся</q>
           <figcaption>
@@ -75,32 +75,44 @@
       </section>
 
       <!-- styles -->
-      <section class="styles page__section page__section_out-of-content scrollto" id="styles">
+      <section class="styles page__section page__section_out-of-content" id="styles">
         <div class="styles__container page__section-container">
-          <h2 class="styles__title page__title">Шоссе</h2>
-          <p class="styles__paragraph page__paragraph">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
-          <div class="styles__slider-container">
-            <div class="styles__slider">
-              <div class="tt styles__slider-element">
-                <img class="styles__image" src="./images/styles/tt.png" alt="Фото тт трассы">
+          <div class="styles__slider">
+            <div class="tt styles__slider-element">
+              <h2 class="styles__title page__title">ТТ</h2>
+              <p class="styles__paragraph page__paragraph">ТТ — это велосипед для триатлона или раздельного старта, гооняют на таком велике только по равнинному асфальту, велик очень быстрые и аэродинамичный.</p>
+              <div class="styles__images-container">
+                <img class="styles__image" src="./images/styles/tt.jpg" alt="Фото тт трассы">
                 <div class="styles__icon">
                   <svg class="styles__icon-svg" width="50" height="2" viewBox="0 0 50 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1H12H22.3577H33H50" stroke="white" stroke-width="2"/></svg>
                 </div>
               </div>
-              <div class="road styles__slider-element">
-                <img class="styles__image" src="./images/styles/road.png" alt="Фото шоссейной трассы">
+            </div>
+            <div class="road styles__slider-element">
+              <h2 class="styles__title styles__title_active page__title">Шоссе</h2>
+              <p class="styles__paragraph styles__paragraph_active page__paragraph">На шоссейном велосипеде можно ездить по асфальту на разных градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и самостоятельно.</p>
+              <div class="styles__images-container">
+                <img class="styles__image" src="./images/styles/road.jpg" alt="Фото шоссейной трассы">
                 <div class="styles__icon styles__icon_active">
                   <svg class="styles__icon-svg" width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 15L9.38934 3.61363C11.0392 1.3744 14.4142 1.46086 15.9472 3.78163L22.1718 13.2047C22.9123 14.3256 24.1659 15 25.5094 15H34H51" stroke="white" stroke-width="2"/></svg>
                 </div>
               </div>
-              <div class="gravel styles__slider-element">
-                <img class="styles__image" src="./images/styles/gravel.png" alt="Фото грэвел трассы">
+            </div>
+            <div class="gravel styles__slider-element">
+              <h2 class="styles__title page__title">Грэвел</h2>
+              <p class="styles__paragraph page__paragraph">Грэвел похож на шоссейный велосипед, но конструкция рамы немного отличается, и на нём стоят более широкие покрышки, всё для того чтобы проехать по лёгкому бездорожью.</p>
+              <div class="styles__images-container">
+                <img class="styles__image" src="./images/styles/gravel.jpg" alt="Фото грэвел трассы">
                 <div class="styles__icon">
                   <svg class="styles__icon-svg" width="52" height="7" viewBox="0 0 52 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 6L12.443 2.03898C13.4403 1.69373 14.5337 1.75667 15.4849 2.21408L22.1707 5.42916C22.9417 5.79993 23.8112 5.91373 24.6517 5.75385L35.7876 3.63553C36.2587 3.54591 36.7421 3.54174 37.2147 3.62322L51 6" stroke="white" stroke-width="2"/></svg>
                 </div>
               </div>
-              <div class="tt styles__slider-element">
-                <img class="styles__image" src="./images/styles/tt.png" alt="Фото тт трассы">
+            </div>
+            <div class="tt styles__slider-element">
+              <h2 class="styles__title page__title">ТТ</h2>
+              <p class="styles__paragraph page__paragraph">ТТ — это велосипед для триатлона или раздельного старта, гооняют на таком велике только по равнинному асфальту, велик очень быстрые и аэродинамичный.</p>
+              <div class="styles__images-container">
+                <img class="styles__image" src="./images/styles/tt.jpg" alt="Фото тт трассы">
                 <div class="styles__icon">
                   <svg class="styles__icon-svg" width="50" height="2" viewBox="0 0 50 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1H12H22.3577H33H50" stroke="white" stroke-width="2"/></svg>
                 </div>
@@ -108,20 +120,20 @@
             </div>
           </div>
           <div class="styles__buttons">
-            <button class="styles__button styles__button-left"></button>
-            <button class="styles__button styles__button-right"></button>
+            <button class="styles__button styles__button_direction_left"></button>
+            <button class="styles__button styles__button_direction_right"></button>
           </div>
         </div>
       </section>
 
       <!-- trainings -->
-      <section class="trainings page__section scrollto" id="trainings">
+      <section class="trainings page__section" id="trainings">
         <h2 class="trainings__title page__title">Тренировки</h2>
-        <img src="./images/trainings/trainings__image.png" alt="Дорога в лесу" class="trainings__image">
+        <img src="./images/trainings/trainings__image.jpg" alt="Дорога в лесу" class="trainings__image">
         <p class="trainings__paragraph page__paragraph">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
         <ul class="trainings__services-list">
-          <li class="trainings__list-element"><a href="#" class="trainings__service-link">Strava</a></li>
-          <li class="trainings__list-element"><a href="#" class="trainings__service-link">Komoot</a></li>
+          <li class="trainings__list-element"><a class="trainings__service-link" href="https://www.strava.com" target="_blank">Strava</a></li>
+          <li class="trainings__list-element"><a class="trainings__service-link" href="https://www.komoot.com" target="_blank">Komoot</a></li>
         </ul>
       </section>
     </main>
@@ -129,11 +141,11 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer__container">
-        <label class="footer__email-label" for="email-input">Подпишитесь на рассылку —</label>
-        <fieldset class="footer__email-fieldset">
+        <label class="footer__email-label" for="email">Подпишитесь на рассылку —</label>
+        <form class="footer__email-form">
           <input class="footer__email-input" type="email" name="email-input" id="email" placeholder="Ваш e-mail" required>
           <button class="footer__submit-button" type="submit">ok</button>
-        </fieldset>
+        </form>
         <small class="footer__copyright">&copy; Road Club 2021</small>
         <div class="theme-switcher footer__theme-switcher">
           <div class="theme-switcher__light-theme-icon"></div>
@@ -147,9 +159,9 @@
 
   <script src="./scripts/burger-menu.js"></script>
   <script src="./scripts/bicycle-card.js"></script>
-  <script src="./scripts/styles-slider-texts.js"></script>
   <script src="./scripts/styles-slider.js"></script>
   <script src="./scripts/smooth-scroll.js"></script>
+  <script src="./scripts/email-form.js"></script>
 
 </body>
 </html>

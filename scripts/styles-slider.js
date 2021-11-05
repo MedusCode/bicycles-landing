@@ -1,8 +1,6 @@
-const buttonLeft = document.querySelector('.styles__button-left');
-const buttonRight = document.querySelector('.styles__button-right');
+const buttonLeft = document.querySelector('.styles__button_direction_left');
+const buttonRight = document.querySelector('.styles__button_direction_right');
 const stylesSlider = document.querySelector('.styles__slider');
-const stylesTitle = document.querySelector('.styles__title');
-const stylesParagraph = document.querySelector('.styles__paragraph');
 
 
 function disableButtons (boolean) {
@@ -47,18 +45,21 @@ function sliderElementsRegroup (hiddenElement, elementCopy, slide) {
   }
 }
 
-function setSectionTexts (nextElement) {
-  const key = nextElement.classList[0];
-  stylesTitle.style.opacity = '0';
-  stylesParagraph.style.opacity = '0';
+function changeTexts (previousElement, nextElement) {
+  const previousTitle = previousElement.querySelector('.styles__title');
+  const previousParagraph = previousElement.querySelector('.styles__paragraph');
+  nextElement.querySelector('.styles__title').classList.add('styles__title_active');
+  nextElement.querySelector('.styles__paragraph').classList.add('styles__paragraph_active');
+  previousTitle.style.opacity = '0';
+  previousParagraph.style.opacity = '0';
 
-  // after text hides
+  // after text changing
   setTimeout(() => {
-    stylesTitle.textContent = stylesTexts[key].title;
-    stylesParagraph.textContent = stylesTexts[key].paragraph;
-    removeStyleAtribute(stylesTitle);
-    removeStyleAtribute(stylesParagraph);
-  }, 200)
+    previousTitle.classList.remove('styles__title_active');
+    previousParagraph.classList.remove('styles__paragraph_active');
+    removeStyleAtribute(previousTitle);
+    removeStyleAtribute(previousParagraph);
+  }, 599)
 }
 
 function slide (previousElement, nextElement, elementForCopy, hiddenElement, translateSlider, direction) {
@@ -67,7 +68,7 @@ function slide (previousElement, nextElement, elementForCopy, hiddenElement, tra
   toggleTransition(stylesSlider, nextElementIcon, previousElementIcon);
   translateXSlider(translateSlider);
   toggleIcons(previousElementIcon, nextElementIcon);
-  setSectionTexts(nextElement);
+  changeTexts(previousElement, nextElement);
 
   // after slide
   setTimeout(() => {

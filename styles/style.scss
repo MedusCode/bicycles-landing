@@ -27,8 +27,6 @@
 @import './modules/blocks/header/__burger/_opened/header__burger_opened.scss';
 @import './modules/blocks/header/__theme-switcher/header__theme-switcher.scss';
 
-@import './modules/blocks/main/main.scss';
-
 @import './modules/blocks/lead/lead.scss';
 @import './modules/blocks/lead/__container/lead__container.scss';
 @import './modules/blocks/lead/__title/lead__title.scss';
@@ -51,13 +49,15 @@
 @import './modules/blocks/quote/__author-profession/quote__author-profession.scss';
 
 @import './modules/blocks/styles/styles.scss';
-@import './modules/blocks/styles/__element-animating/styles__element-animating.scss';
 @import './modules/blocks/styles/__container/styles__container.scss';
-@import './modules/blocks/styles/__title/styles__title.scss';
-@import './modules/blocks/styles/__paragraph/styles__paragraph.scss';
-@import './modules/blocks/styles/__slider-container/styles__slider-container.scss';
+@import './modules/blocks/styles/__element-animating/styles__element-animating.scss';
 @import './modules/blocks/styles/__slider/styles__slider.scss';
 @import './modules/blocks/styles/__slider-element/styles__slider-element.scss';
+@import './modules/blocks/styles/__title/styles__title.scss';
+@import './modules/blocks/styles/__title/_active/styles__title_active.scss';
+@import './modules/blocks/styles/__paragraph/styles__paragraph.scss';
+@import './modules/blocks/styles/__paragraph/_active/styles__paragraph_active.scss';
+@import './modules/blocks/styles/__images-container/styles__images-container.scss';
 @import './modules/blocks/styles/__image/styles__image.scss';
 @import './modules/blocks/styles/__icon/styles__icon.scss';
 @import './modules/blocks/styles/__icon/_active/styles__icon_active.scss';
@@ -76,9 +76,10 @@
 @import './modules/blocks/footer/footer.scss';
 @import './modules/blocks/footer/__container/footer__container.scss';
 @import './modules/blocks/footer/__email-label/footer__email-label.scss';
-@import './modules/blocks/footer/__email-fieldset/footer__email-fieldset.scss';
+@import './modules/blocks/footer/__email-form/footer__email-form.scss';
 @import './modules/blocks/footer/__email-input/footer__email-input.scss';
 @import './modules/blocks/footer/__submit-button/footer__submit-button.scss';
+@import './modules/blocks/footer/__submit-button/_active/footer__submit-button_active.scss';
 @import './modules/blocks/footer/__copyright/footer__copyright.scss';
 @import './modules/blocks/footer/__theme-switcher/footer__theme-switcher.scss';
 @import './modules/blocks/footer/__logo/footer__logo.scss';

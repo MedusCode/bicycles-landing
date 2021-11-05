@@ -27,8 +27,6 @@
 @import './modules/blocks/header/__burger/_opened/header__burger_opened.scss';
 @import './modules/blocks/header/__theme-switcher/header__theme-switcher.scss';
 
-@import './modules/blocks/main/main.scss';
-
 @import './modules/blocks/lead/lead.scss';
 @import './modules/blocks/lead/__container/lead__container.scss';
 @import './modules/blocks/lead/__title/lead__title.scss';
@@ -78,9 +76,10 @@
 @import './modules/blocks/footer/footer.scss';
 @import './modules/blocks/footer/__container/footer__container.scss';
 @import './modules/blocks/footer/__email-label/footer__email-label.scss';
-@import './modules/blocks/footer/__email-fieldset/footer__email-fieldset.scss';
+@import './modules/blocks/footer/__email-form/footer__email-form.scss';
 @import './modules/blocks/footer/__email-input/footer__email-input.scss';
 @import './modules/blocks/footer/__submit-button/footer__submit-button.scss';
+@import './modules/blocks/footer/__submit-button/_active/footer__submit-button_active.scss';
 @import './modules/blocks/footer/__copyright/footer__copyright.scss';
 @import './modules/blocks/footer/__theme-switcher/footer__theme-switcher.scss';
 @import './modules/blocks/footer/__logo/footer__logo.scss';

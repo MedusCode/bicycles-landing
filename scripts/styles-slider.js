@@ -1,5 +1,5 @@
-const buttonLeft = document.querySelector('.styles__button-left');
-const buttonRight = document.querySelector('.styles__button-right');
+const buttonLeft = document.querySelector('.styles__button_direction_left');
+const buttonRight = document.querySelector('.styles__button_direction_right');
 const stylesSlider = document.querySelector('.styles__slider');
 
 

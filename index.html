@@ -11,7 +11,7 @@
   <!-- <link rel="shortcut icon" href="#" type="image/svg"> -->
 </head>
 <body>
-  <div class="page scrollto" id="page">
+  <div class="page" id="page">
 
     <!-- header -->
     <header class="header">
@@ -24,16 +24,16 @@
             <a href="#" class="header__link">Велосипеды</a>
           </li>
           <li class="header__list-element">
-            <a href="#trainigs" class="header__link">Тренировки</a>
+            <a href="#trainings" class="header__link">Тренировки</a>
           </li>
         </ul>
-        <div class="header__burger-container">
+        <button class="header__burger-container">
           <div class="header__burger"></div>
-          <div class="theme-switcher header__theme-switcher">
-            <div class="theme-switcher__light-theme-icon"></div>
-            <button class="theme-switcher__switcher"></button>
-            <div class="theme-switcher__dark-theme-icon"></div>
-          </div>
+        </button>
+        <div class="theme-switcher header__theme-switcher">
+          <div class="theme-switcher__light-theme-icon"></div>
+          <button class="theme-switcher__switcher"></button>
+          <div class="theme-switcher__dark-theme-icon"></div>
         </div>
       </nav>
     </header>
@@ -49,14 +49,14 @@
             <div class="lead__placeholder"></div>
             <div class="lead__bicycle-card-movement-area">
               <div class="lead__bicycle-card">
-                <img class="lead__bicycle-image" src="./images/bicycles/road/cannodale.jpg" alt="Велосипед Cannondale Systemsix" class="lead__bicycle-image">
+                <img class="lead__bicycle-image" src="./images/bicycles/road/cannodale.jpg" alt="Велосипед Cannondale Systemsix">
               </div>
             </div>
           </div>
           <p class="lead__paragraph page__paragraph">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
-          <a href="#" class="lead__button">Подробнее</a>
+          <a href="#styles" class="lead__button">Подробнее</a>
           <div class="lead__bicycle-caption">
-            <p class="lead__bicycle-name">Cannondale Systemsix</з>
+            <p class="lead__bicycle-name">Cannondale Systemsix</p>
             <hr class="lead__line">
           </div>
         </div>
@@ -75,7 +75,7 @@
       </section>
 
       <!-- styles -->
-      <section class="styles page__section page__section_out-of-content scrollto" id="styles">
+      <section class="styles page__section page__section_out-of-content" id="styles">
         <div class="styles__container page__section-container">
           <div class="styles__slider">
             <div class="tt styles__slider-element">
@@ -120,20 +120,20 @@
             </div>
           </div>
           <div class="styles__buttons">
-            <button class="styles__button styles__button-left"></button>
-            <button class="styles__button styles__button-right"></button>
+            <button class="styles__button styles__button_direction_left"></button>
+            <button class="styles__button styles__button_direction_right"></button>
           </div>
         </div>
       </section>
 
       <!-- trainings -->
-      <section class="trainings page__section scrollto" id="trainings">
+      <section class="trainings page__section" id="trainings">
         <h2 class="trainings__title page__title">Тренировки</h2>
         <img src="./images/trainings/trainings__image.jpg" alt="Дорога в лесу" class="trainings__image">
         <p class="trainings__paragraph page__paragraph">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
         <ul class="trainings__services-list">
-          <li class="trainings__list-element"><a href="#" class="trainings__service-link">Strava</a></li>
-          <li class="trainings__list-element"><a href="#" class="trainings__service-link">Komoot</a></li>
+          <li class="trainings__list-element"><a class="trainings__service-link" href="https://www.strava.com" target="_blank">Strava</a></li>
+          <li class="trainings__list-element"><a class="trainings__service-link" href="https://www.komoot.com" target="_blank">Komoot</a></li>
         </ul>
       </section>
     </main>
@@ -141,11 +141,11 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer__container">
-        <label class="footer__email-label" for="email-input">Подпишитесь на рассылку —</label>
-        <fieldset class="footer__email-fieldset">
+        <label class="footer__email-label" for="email">Подпишитесь на рассылку —</label>
+        <form class="footer__email-form">
           <input class="footer__email-input" type="email" name="email-input" id="email" placeholder="Ваш e-mail" required>
           <button class="footer__submit-button" type="submit">ok</button>
-        </fieldset>
+        </form>
         <small class="footer__copyright">&copy; Road Club 2021</small>
         <div class="theme-switcher footer__theme-switcher">
           <div class="theme-switcher__light-theme-icon"></div>
@@ -161,6 +161,7 @@
   <script src="./scripts/bicycle-card.js"></script>
   <script src="./scripts/styles-slider.js"></script>
   <script src="./scripts/smooth-scroll.js"></script>
+  <script src="./scripts/email-form.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,12 @@
+.bikes {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 120px;
+  margin-bottom: 0;
+  padding-bottom: 210px;
+
+  @include after-laptop {
+    row-gap: 80px;
+    padding-bottom: 150px;
+  }
+}

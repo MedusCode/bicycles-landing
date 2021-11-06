@@ -102,7 +102,7 @@
 }
 @media (max-width: 1000px) {
   .page__title {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
 @media (max-width: 450px) {
@@ -893,6 +893,128 @@
     background-size: 6px 11px;
     background-position: 8px 6.5px;
     margin: 0 10px 0 0;
+  }
+}
+
+.bikes {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  row-gap: 120px;
+  margin-bottom: 0;
+  padding-bottom: 210px;
+}
+@media (max-width: 1000px) {
+  .bikes {
+    row-gap: 80px;
+    padding-bottom: 150px;
+  }
+}
+
+.bikes__title {
+  margin: 0;
+}
+
+.bikes__styles-list {
+  display: grid;
+  grid-auto-flow: column;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  justify-self: end;
+  align-self: end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 1000px) {
+  .bikes__styles-list {
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+
+.bikes__button {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  color: #222222;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+}
+.bikes__button:hover {
+  opacity: 0.6;
+}
+@media (max-width: 1000px) {
+  .bikes__button {
+    font-size: 16px;
+  }
+}
+
+.bikes__button_active {
+  font-weight: 600;
+  color: #151515;
+  opacity: 1;
+}
+.bikes__button_active:hover {
+  opacity: 0.75;
+}
+
+.bikes__bikes-list {
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1/-1;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bikes__bikes-list_active {
+  position: relative;
+  z-index: 0;
+}
+
+.bikes__bike-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 380px;
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+}
+@media (max-width: 1300px) {
+  .bikes__bike-image-container {
+    width: calc(29.23vw - 20px);
+    height: calc(29.23vw - 20px);
+  }
+}
+
+.bikes__bike-image {
+  width: 89.47%;
+  border-radius: 25px;
+}
+
+.bikes__bike-name {
+  margin: 22px 0 0;
+  color: #151515;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+@media (max-width: 1000px) {
+  .bikes__bike-name {
+    font-size: 13px;
+    margin: 15px 0 0;
   }
 }
 

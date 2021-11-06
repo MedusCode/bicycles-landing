@@ -1,0 +1,20 @@
+.bikes__button {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  color: $secondary-color;
+  opacity: $secondary-color-opacity;
+  cursor: pointer;
+  transition: $links-transiton;
+
+  @include font($font-family, 400, 18px, 28px);
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @include after-laptop {
+    font-size: 16px;
+  }
+}

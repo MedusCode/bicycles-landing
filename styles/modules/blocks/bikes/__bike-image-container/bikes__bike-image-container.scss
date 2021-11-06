@@ -1,0 +1,15 @@
+.bikes__bike-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 380px;
+  border-radius: 20px;
+  background-color: $page-color;
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+
+  @media (max-width: 1300px) {
+    width: calc(29.23vw - 20px);
+    height: calc(29.23vw - 20px);
+  }
+}

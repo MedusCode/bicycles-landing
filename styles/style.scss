@@ -65,6 +65,17 @@
 @import './modules/blocks/styles/__buttons/styles__buttons.scss';
 @import './modules/blocks/styles/__button/styles__button.scss';
 
+@import './modules/blocks/bikes/bikes.scss';
+@import './modules/blocks/bikes/__title/bikes__title.scss';
+@import './modules/blocks/bikes/__styles-list/bikes__styles-list.scss';
+@import './modules/blocks/bikes/__button/bikes__button.scss';
+@import './modules/blocks/bikes/__button/_active/bikes__button_active.scss';
+@import './modules/blocks/bikes/__bikes-list/bikes__bikes-list.scss';
+@import './modules/blocks/bikes/__bikes-list/_active/bikes__bikes-list_active.scss';
+@import './modules/blocks/bikes/__bike-image-container/bikes__bike-image-container.scss';
+@import './modules/blocks/bikes/__bike-image/bikes__bike-image.scss';
+@import './modules/blocks/bikes/__bike-name/bikes__bike-name.scss';
+
 @import './modules/blocks/trainings/trainings.scss';
 @import './modules/blocks/trainings/__title/trainings__title.scss';
 @import './modules/blocks/trainings/__image/trainings__image.scss';

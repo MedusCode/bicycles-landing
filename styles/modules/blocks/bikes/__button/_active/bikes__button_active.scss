@@ -1,0 +1,9 @@
+.bikes__button_active {
+  font-weight: 600;
+  color: $primary-color;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

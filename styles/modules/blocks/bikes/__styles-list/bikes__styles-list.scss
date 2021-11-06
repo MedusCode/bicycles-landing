@@ -1,0 +1,14 @@
+.bikes__styles-list {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 40px;
+  justify-self: end;
+  align-self: end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include after-laptop {
+    column-gap: 30px;
+  }
+}

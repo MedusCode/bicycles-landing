@@ -1,0 +1,13 @@
+.bikes__slider-indicator {
+  display: none;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: calc(50vw - 11px - 18px);
+  width: 22px;
+  height: 4px;
+
+  @include after-tablet {
+    display: flex;
+  }
+}

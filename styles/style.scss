@@ -83,9 +83,14 @@
 @import './modules/blocks/bikes/__bikes-list/bikes__bikes-list.scss';
 @import './modules/blocks/bikes/__bikes-list/_active/bikes__bikes-list_active.scss';
 @import './modules/blocks/bikes/__bike-card/bikes__bike-card.scss';
+@import './modules/blocks/bikes/__bike-card/_slide/bikes__bike-card_slide_left.scss';
+@import './modules/blocks/bikes/__bike-card/_slide/bikes__bike-card_slide_right.scss';
 @import './modules/blocks/bikes/__bike-image-container/bikes__bike-image-container.scss';
 @import './modules/blocks/bikes/__bike-image/bikes__bike-image.scss';
 @import './modules/blocks/bikes/__bike-name/bikes__bike-name.scss';
+@import './modules/blocks/bikes/__slider-indicator/bikes__slider-indicator.scss';
+@import './modules/blocks/bikes/__slider-indicator-dot/bikes__slider-indicator-dot.scss';
+@import './modules/blocks/bikes/__slider-indicator-dot/_active/bikes__slider-indicator-dot_active.scss';
 
 // trainings
 @import './modules/blocks/trainings/trainings.scss';

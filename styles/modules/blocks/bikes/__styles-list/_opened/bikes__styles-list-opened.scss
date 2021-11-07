@@ -1,6 +1,6 @@
 .bikes__styles-list-opened {
   @include after-tablet {
-    max-height: none;
+    max-height: 300%;
   }
 
   & .bikes__style {

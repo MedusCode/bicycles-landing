@@ -23,13 +23,13 @@
     margin-left: calc(50vw - 250px - 18px);
     box-sizing: border-box;
     width: 114px;
-    max-height: 32px;
+    max-height: 100%;
     overflow: hidden;
     background-color: $page-color;
     border: 1px solid #E3E3E3;
     border-radius: 2px;
     border-top: none;
-    transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.2s ease-in-out;
     z-index: 1;
   }
 

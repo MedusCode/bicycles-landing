@@ -16,8 +16,6 @@ function closeDropdownMenu () {
   stylesList.classList.remove('bikes__styles-list-opened');
 }
 
-
-
 function toggleButton (button) {
   button.classList.toggle('bikes__button_active');
   button.parentElement.classList.toggle('bikes__style_active');
@@ -38,6 +36,7 @@ function switchButton (style) {
 }
 
 function changeListSmoothly (previousList, nextList) {
+  resetSlider(); // from bikes-slider.js
   nextList.style.opacity = 0;
   previousList.style.opacity = 0;
   setTimeout(() => {
@@ -69,6 +68,14 @@ function switchTab (style) {
   }
 }
 
+const closeDropdownMenuMissClick = function (event) {
+  if (isDropdownMenuOpened && event.target.parentElement.parentElement !== stylesList) {
+    closeDropdownMenu();
+    isDropdownMenuOpened = false;
+    document.removeEventListener('click', closeDropdownMenuMissClick);
+  }
+}
+
 styleButtons.forEach(element => {
   element.addEventListener('click', (event) => {
     if (window.innerWidth >= 768 || isDropdownMenuOpened) {
@@ -76,18 +83,13 @@ styleButtons.forEach(element => {
       switchButton(style);
       switchTab(style);
       closeDropdownMenu();
+      document.removeEventListener('click', closeDropdownMenuMissClick);
       isDropdownMenuOpened = false;
     }
     else {
       openDropdownMenu();
+      document.addEventListener('click', closeDropdownMenuMissClick);
       isDropdownMenuOpened = true;
     }
   });
 });
-
-document.addEventListener('click', (event) => {
-  if (isDropdownMenuOpened && event.target.parentElement.parentElement !== stylesList) {
-    closeDropdownMenu();
-    isDropdownMenuOpened = false;
-  }
-})

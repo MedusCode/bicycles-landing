@@ -10,10 +10,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear, transform 0.3s ease-in-out;
 
   @include after-tablet {
     margin-left: calc(50vw - 250px - 18px);
+    width: auto;
   }
 
   @media (max-width: 536px) {

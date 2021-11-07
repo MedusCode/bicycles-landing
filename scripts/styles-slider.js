@@ -63,6 +63,7 @@ function changeTexts (previousElement, nextElement) {
 }
 
 function slide (previousElement, nextElement, elementForCopy, hiddenElement, translateSlider, direction) {
+  disableButtons(true);
   const previousElementIcon = getElementIcon(previousElement);
   const nextElementIcon = getElementIcon(nextElement);
   toggleTransition(stylesSlider, nextElementIcon, previousElementIcon);
@@ -92,11 +93,9 @@ function slideDirection(direction) {
 
 
 buttonLeft.addEventListener('click', () => {
-  disableButtons(true);
   slideDirection('left');
 });
 
 buttonRight.addEventListener('click', () => {
-  disableButtons(true);
   slideDirection('right');
 });

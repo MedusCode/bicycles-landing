@@ -12,4 +12,17 @@
     width: calc(29.23vw - 20px);
     height: calc(29.23vw - 20px);
   }
+
+  @include after-tablet {
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    filter: none;
+    padding: 4.885% 4.885% 0;
+  }
+
+  @media (max-width: 536px) {
+    width: calc(100vw - 36px);
+    height: calc(100vw - 36px);
+  }
 }

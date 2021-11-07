@@ -11,4 +11,29 @@
   @include after-laptop {
     column-gap: 30px;
   }
+
+  @include after-tablet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    grid-auto-flow: row;
+    justify-self: start;
+    align-self: start;
+    justify-content: center;
+    margin-left: calc(50vw - 250px - 18px);
+    box-sizing: border-box;
+    width: 114px;
+    max-height: 32px;
+    overflow: hidden;
+    background-color: $page-color;
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    border-top: none;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  @media (max-width: 536px) {
+    margin: 0;
+  }
 }

@@ -25,10 +25,11 @@
     width: 114px;
     max-height: 100%;
     overflow: hidden;
-    background-color: $page-color;
+    background-color: var(--page-color);
     border: 1px solid #E3E3E3;
     border-radius: 2px;
     border-top: none;
+    border-color: var(--outline-color);
     transition: max-height 0.2s ease-in-out;
     z-index: 1;
   }

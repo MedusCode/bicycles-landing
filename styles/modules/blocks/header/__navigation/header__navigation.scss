@@ -3,6 +3,10 @@
   padding-bottom: 28px;
   margin-bottom: 0;
 
+  &::after {
+    display: none;
+  }
+
   @include mobile {
     min-height: 74px;
   }

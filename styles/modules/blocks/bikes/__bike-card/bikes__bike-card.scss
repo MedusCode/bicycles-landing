@@ -1,6 +1,6 @@
 .bikes__bike-card {
   @include after-tablet {
-    background-color: $page-color;
+    background-color: #f4f4f4;
     border-radius: 20px;
     margin-right: 135px;
     transition: filter 0.15s ease-in-out, transform 0.2s linear;

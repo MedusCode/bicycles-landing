@@ -1,10 +1,10 @@
 .bikes__button_active {
   font-weight: 600;
-  color: $primary-color;
+  color: var(--primary-color);
   opacity: 1;
 
   &:hover {
-    opacity: 0.75;
+    opacity: var(--links-hover-opacity);
   }
 
   @include after-tablet {
@@ -13,13 +13,19 @@
     align-items: center;
     box-sizing: border-box;
     border: 1px solid #E3E3E3;
+    border-color: var(--outline-color);
     border-radius: 2px;
+
+    &:hover {
+      opacity: 1;
+    }
 
     &::after {
       content: '';
       width: 11px;
       height: 6.5px;
       background-image: url(../images/bikes/dropdown-menu-icon.svg);
+      filter: var(--bikes-button-active-filter);
       background-size: contain;
       background-repeat: no-repeat;
     }

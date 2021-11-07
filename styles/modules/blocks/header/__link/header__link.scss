@@ -1,13 +1,13 @@
 .header__link {
   font-family: $font-family;
   font-size: 14px;
-  color: $primary-color;
+  color: var(--primary-color);
   font-weight: 500;
   text-decoration: none;
   transition: $links-transiton;
 
   &:hover {
-    opacity: 0.75;
+    opacity: var(--links-hover-opacity);
   }
 
   @include mobile {

@@ -3,7 +3,7 @@
   background-color: transparent;
   margin: 0;
   padding: 0;
-  color: $secondary-color;
+  color: var(--secondary-color);
   opacity: $secondary-color-opacity;
   cursor: pointer;
   transition: $links-transiton, font-weight 0.3s linear;
@@ -11,7 +11,7 @@
   @include font($font-family, 400, 18px, 28px);
 
   &:hover {
-    opacity: 0.6;
+    opacity: var(--bikes-button-hover-opacity);
   }
 
   @include after-laptop {
@@ -25,6 +25,10 @@
     font-size: 14px;
     line-height: 14px;
     text-align: left;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   @include mobile {

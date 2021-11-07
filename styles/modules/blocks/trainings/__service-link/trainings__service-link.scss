@@ -1,12 +1,12 @@
 .trainings__service-link {
-  color: $primary-color;
+  color: var(--primary-color);
   transition: $links-transiton;
   text-decoration: none;
 
   @include font($font-family, 600, 18px, 28px);
 
   &:hover {
-    opacity: 0.75;
+    opacity: var(--links-hover-opacity);
   }
 
   @include mobile {

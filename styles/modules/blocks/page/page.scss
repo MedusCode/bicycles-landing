@@ -1,6 +1,6 @@
 .page {
   width: 100%;
-  background-color: $page-color;
+  background-color: var(--page-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

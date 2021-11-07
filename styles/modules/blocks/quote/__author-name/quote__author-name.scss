@@ -1,5 +1,5 @@
 .quote__author-name {
-  color: $primary-color;
+  color: var(--primary-color);
   margin: 0 0 6px 0;
   @include font($font-family, 500, 20px, 32px);
 

@@ -1,0 +1,11 @@
+.bikes__styles-list-opened {
+  @include after-tablet {
+    max-height: 300%;
+  }
+
+  & .bikes__style {
+    & .bikes__button_active::after {
+      transform: rotate(180deg);
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .page__paragraph {
   @include font($font-family, 400, 18px, 28px);
-  color: $secondary-color;
+  color: var(--secondary-color);
   opacity: 0.7;
 
   @include after-laptop {

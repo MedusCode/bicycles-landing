@@ -13,7 +13,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: $page-color;
+    background-color: var(--page-color);
     padding-top: 144px;
     flex-direction: column;
     justify-content: flex-start;

@@ -1,10 +1,10 @@
 .page__title {
   @include font($font-family, 700, 55px, 60px);
-  color: $primary-color;
+  color: var(--primary-color);
   letter-spacing: -0.5px;
 
   @include after-laptop {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   @include mobile {

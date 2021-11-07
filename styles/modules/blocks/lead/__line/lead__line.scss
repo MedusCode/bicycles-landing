@@ -1,7 +1,8 @@
 .lead__line {
+  --lead-line-background-color: #D7D4D4;
   height: 2px;
   width: 132px;
   border: none;
-  background-color: #D7D4D4;
+  background-color: var(--lead-line-background-color);
   margin: 10px 0 0 30px;
 }

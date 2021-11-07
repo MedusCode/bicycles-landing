@@ -1,0 +1,37 @@
+.bikes__bike-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 380px;
+  border-radius: 20px;
+  background-color: #f4f4f4;
+  filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));
+  transition: filter 0.15s ease-in-out;
+
+  &:hover {
+    filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.11));
+  }
+
+  @media (max-width: 1300px) {
+    width: calc(29.23vw - 20px);
+    height: calc(29.23vw - 20px);
+  }
+
+  @include after-tablet {
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    filter: none;
+    padding: 4.885% 4.885% 0;
+
+    &:hover {
+      filter: none;
+    }
+  }
+
+  @media (max-width: 536px) {
+    width: calc(100vw - 36px);
+    height: calc(100vw - 36px);
+  }
+}

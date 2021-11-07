@@ -1,0 +1,7 @@
+.bikes__title {
+  margin: 0;
+
+  @include after-tablet {
+    margin-bottom: 20px;
+  }
+}

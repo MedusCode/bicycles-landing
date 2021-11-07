@@ -1,0 +1,23 @@
+.bikes__bikes-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1/-1;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.15s linear, transform 0.3s ease-in-out;
+
+  @include after-tablet {
+    margin-left: calc(50vw - 250px - 18px);
+    width: auto;
+  }
+
+  @media (max-width: 536px) {
+    margin: 0;
+  }
+}

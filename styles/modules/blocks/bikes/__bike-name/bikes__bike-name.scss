@@ -1,0 +1,23 @@
+.bikes__bike-name {
+  margin: 22px 0 0;
+  color: var(--primary-color);
+
+  @include font($font-family, 600, 18px, 22px);
+
+  @include after-laptop {
+    font-size: 13px;
+    margin: 15px 0 0;
+  };
+
+  @include after-tablet {
+    font-size: 17px;
+    line-height: 18px;
+    margin: 3px 0 16px;
+    text-align: center;
+    color: #151515;
+  }
+
+  @include mobile {
+    font-size: 14px;
+  }
+}

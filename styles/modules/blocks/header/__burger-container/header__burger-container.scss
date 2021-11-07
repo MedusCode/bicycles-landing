@@ -7,6 +7,9 @@
   right: 18px;
   width: 22px;
   height: 19px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
   cursor: pointer;
 
   @include mobile {

@@ -1,5 +1,5 @@
 .quote__text {
-  color: $primary-color;
+  color: var(--primary-color);
   letter-spacing: -0.5px;
   @include font($font-family, 600, 34px, 44px);
 

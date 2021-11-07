@@ -1,6 +1,11 @@
 .styles__slider {
   display: flex;
+  align-items: end;
   width: min-content;
   height: 100%;
   transform: translate(calc(-100% / 4), 0);
+
+  @include after-tablet {
+    align-items: start;
+  }
 }

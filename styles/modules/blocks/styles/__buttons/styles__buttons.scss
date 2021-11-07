@@ -1,9 +1,21 @@
 .styles__buttons {
   display: flex;
   align-self: center;
+  margin-top: 50px;
+
+  @include after-laptop {
+    margin-top: 30px;
+  }
 
   @include after-tablet {
-    grid-row-start: 1;
-    grid-column: 2;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    right: 18px;
+    transform: translate(0, -50%);
+  }
+
+  @include mobile {
+    top: 20px;
   }
 }

@@ -1,7 +1,16 @@
 .styles__image {
-  height: 100%;
+  height: 400px;
+
+  @include laptop {
+    height: 360px;
+  }
+
+  @include after-laptop {
+    height: 330px;
+  }
 
   @include after-tablet {
     width: calc(100vw - 36px);
+    height: auto;
   }
 }

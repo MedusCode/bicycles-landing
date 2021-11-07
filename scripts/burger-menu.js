@@ -39,3 +39,10 @@ listElements.forEach(element => {
     }
   });
 });
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 450) {
+    list.removeAttribute('style');
+    burger.classList.remove('header__burger_opened');
+  }
+});

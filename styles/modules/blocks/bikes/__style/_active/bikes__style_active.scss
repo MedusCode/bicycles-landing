@@ -1,0 +1,5 @@
+.bikes__style_active {
+  @include after-tablet {
+    grid-row: 1/2;
+  }
+}

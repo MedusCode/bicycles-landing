@@ -1,10 +1,12 @@
 .lead {
-  margin-top: 94px;
+  margin-top: 74px;
+  padding-top: 20px;
 
   @include after-tablet {
     &::after {
       content: none;
     }
+    padding-top: 40px;
   }
 
   @include mobile {

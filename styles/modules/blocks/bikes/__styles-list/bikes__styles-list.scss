@@ -1,0 +1,40 @@
+.bikes__styles-list {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 40px;
+  justify-self: end;
+  align-self: end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @include after-laptop {
+    column-gap: 30px;
+  }
+
+  @include after-tablet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    grid-auto-flow: row;
+    justify-self: start;
+    align-self: start;
+    justify-content: center;
+    margin-left: calc(50vw - 250px - 18px);
+    box-sizing: border-box;
+    width: 114px;
+    max-height: 100%;
+    overflow: hidden;
+    background-color: var(--page-color);
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+    border-top: none;
+    border-color: var(--outline-color);
+    transition: max-height 0.2s ease-in-out;
+    z-index: 1;
+  }
+
+  @media (max-width: 536px) {
+    margin: 0;
+  }
+}

@@ -1,8 +1,9 @@
 .header__burger {
+  display: block;
   position: relative;
   width: 100%;
   height: 3px;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
   transition: transform 0.4s ease-in-out;
 
   &::before {
@@ -12,7 +13,7 @@
     top: -8px;
     width: 100%;
     height: 100%;
-    background-color: $primary-color;
+    background-color: var(--primary-color);
     transition: top 0.4s ease-in-out 0.5s;
   }
 
@@ -23,7 +24,7 @@
     bottom: -8px;
     width: 100%;
     height: 100%;
-    background-color: $primary-color;
+    background-color: var(--primary-color);
     transition: bottom 0.4s ease-in-out 0.5s, transform 0.4s ease-in-out;
   }
 }

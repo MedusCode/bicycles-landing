@@ -1,11 +1,15 @@
 .footer__submit-button {
+  visibility: hidden;
+  opacity: 0;
   position: absolute;
   top: 50%;
   right: 22px;
   transform: translate(0, -50%);
   border: none;
+  background-color: transparent;
+  color: var(--primary-color);
   padding: 0 2px;
-  color: $primary-color;
+  transition: opacity 0.15s ease-in-out;
   cursor: pointer;
 
   @include font(inherit, inherit, inherit, inherit);

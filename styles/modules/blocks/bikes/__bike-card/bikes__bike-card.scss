@@ -1,0 +1,12 @@
+.bikes__bike-card {
+  @include after-tablet {
+    background-color: $page-color;
+    border-radius: 20px;
+    margin-right: 135px;
+    filter: drop-shadow(0px 20px 140px rgba(0, 0, 0, 0.06));;
+  }
+
+  @media (max-width: 536px) {
+    margin-right: 18px;
+  }
+}

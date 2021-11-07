@@ -1,0 +1,11 @@
+.bikes__styles-list-container {
+  position: relative;
+  justify-self: end;
+  align-self: end;
+
+  @include after-tablet {
+    align-self: start;
+    justify-self: start;
+    min-height: 32px;
+  }
+}

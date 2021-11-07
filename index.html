@@ -28,7 +28,7 @@
           </li>
         </ul>
         <button class="header__burger-container">
-          <div class="header__burger"></div>
+          <span class="header__burger"></span>
         </button>
         <div class="theme-switcher header__theme-switcher">
           <div class="theme-switcher__light-theme-icon"></div>
@@ -129,18 +129,21 @@
       <!-- bikes -->
       <section class="bikes page__section" id="bikes">
         <h2 class="bikes__title page__title">Велосипеды</h2>
-        <ul class="bikes__styles-list">
-          <li class="bikes__style">
-            <button class="bikes__button bikes__button_active">Шоссе</button>
-          </li>
-          <li class="bikes__style">
-            <button class="bikes__button">Грэвел</button>
-          </li>
-          <li class="bikes__style">
-            <button class="bikes__button">ТТ</button>
-          </li>
-        </ul>
-        <ul class="bikes__bikes-list bikes__bikes-list_active">
+        <div class="bikes__styles-list-container">
+          <ul class="bikes__styles-list">
+            <li class="bikes__style bikes__style_active">
+              <button class="bikes__button bikes__button_active road">Шоссе</button>
+            </li>
+            <li class="bikes__style">
+              <button class="bikes__button gravel">Грэвел</button>
+            </li>
+            <li class="bikes__style">
+              <button class="bikes__button tt">ТТ</button>
+            </li>
+          </ul>
+        </div>
+        <!-- road -->
+        <ul class="bikes__bikes-list bikes__bikes-list_active road">
           <li class="bikes__bike-card">
             <div class="bikes__bike-image-container">
               <img class="bikes__bike-image" src="./images/bikes/road/Cervelo.jpg" alt="Фото Cervelo Caledonia-5">
@@ -158,6 +161,48 @@
               <img class="bikes__bike-image" src="./images/bikes/road/Trek.jpg" alt="Фото Trek Domane SL-7">
             </div>
             <p class="bikes__bike-name">Trek Domane SL-7</p>
+          </li>
+        </ul>
+        <!-- gravel -->
+        <ul class="bikes__bikes-list gravel">
+          <li class="bikes__bike-card">
+            <div class="bikes__bike-image-container">
+              <img class="bikes__bike-image" src="./images/bikes/gravel/cervelo.jpg" alt="Фото Cervelo Aspero GRX 810">
+            </div>
+            <p class="bikes__bike-name">Cervelo Aspero GRX 810</p>
+          </li>
+          <li class="bikes__bike-card">
+            <div class="bikes__bike-image-container">
+              <img class="bikes__bike-image" src="./images/bikes/gravel/specialized.jpg" alt="Фото Specialized S-Works Diverge">
+            </div>
+            <p class="bikes__bike-name">Specialized S-Works Diverge</p>
+          </li>
+          <li class="bikes__bike-card">
+            <div class="bikes__bike-image-container">
+              <img class="bikes__bike-image" src="./images/bikes/gravel/cannondale.jpg" alt="Фото Cannondale Topstone Lefty 3">
+            </div>
+            <p class="bikes__bike-name">Cannondale Topstone Lefty 3</p>
+          </li>
+        </ul>
+        <!-- tt -->
+        <ul class="bikes__bikes-list tt">
+          <li class="bikes__bike-card">
+            <div class="bikes__bike-image-container">
+              <img class="bikes__bike-image" src="./images/bikes/tt/specialized.jpg" alt="Фото Specialized S-Works Shiv">
+            </div>
+            <p class="bikes__bike-name">Specialized S-Works Shiv</p>
+          </li>
+          <li class="bikes__bike-card">
+            <div class="bikes__bike-image-container">
+              <img class="bikes__bike-image" src="./images/bikes/tt/BMC.jpg" alt="Фото BMC Timemachine 01 ONE">
+            </div>
+            <p class="bikes__bike-name">BMC Timemachine 01 ONE</p>
+          </li>
+          <li class="bikes__bike-card">
+            <div class="bikes__bike-image-container">
+              <img class="bikes__bike-image" src="./images/bikes/tt/Cervelo.jpg" alt="Фото Cervelo P-Series">
+            </div>
+            <p class="bikes__bike-name">Cervelo P-Series</p>
           </li>
         </ul>
       </section>
@@ -196,8 +241,9 @@
   <script src="./scripts/burger-menu.js"></script>
   <script src="./scripts/bicycle-card.js"></script>
   <script src="./scripts/styles-slider.js"></script>
-  <script src="./scripts/smooth-scroll.js"></script>
+  <script src="./scripts/bikes-tabs.js"></script>
   <script src="./scripts/email-form.js"></script>
+  <script src="./scripts/smooth-scroll.js"></script>
 
 </body>
 </html>

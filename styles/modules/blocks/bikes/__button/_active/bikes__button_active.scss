@@ -6,4 +6,22 @@
   &:hover {
     opacity: 0.75;
   }
+
+  @include after-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #E3E3E3;
+    border-radius: 2px;
+
+    &::after {
+      content: '';
+      width: 11px;
+      height: 6.5px;
+      background-image: url(../images/bikes/dropdown-menu-icon.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
 }

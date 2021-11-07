@@ -6,7 +6,7 @@
   color: $secondary-color;
   opacity: $secondary-color-opacity;
   cursor: pointer;
-  transition: $links-transiton;
+  transition: $links-transiton, font-weight 0.3s linear;
 
   @include font($font-family, 400, 18px, 28px);
 
@@ -16,5 +16,13 @@
 
   @include after-laptop {
     font-size: 16px;
+  }
+
+  @include after-tablet {
+    width: 114px;
+    padding: 8px 12px;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: left;
   }
 }
